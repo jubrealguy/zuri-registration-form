@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.google.com/specimen/Poppins)" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <main class="main">
+        <div class="text-box">
+            <h2 class="text-head">Learn to code by watching others</h2>
+            <p class="text-paragraph">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable</p>
+        </div>
+
+        <div class="form-box">
+            <p class="form-head"><span>Try it for 7 days</span> then $20/mo. thereafter</p>
+            <form action="" class="form">
+                <input type="text" class="form-input" placeholder="First Name" maxlength = "15" minlength = "3" required>
+                <input type="text" class="form-input" placeholder="Last Name" maxlength = "15" minlength = "3" required>
+                <input type="email" class="form-input" placeholder="Email" required>
+                <input type="password" class="form-input" placeholder="Password" pattern="(?=.*d)(?=.*[a-z])(?=.*[A-Z]).(8,)" required>
+                <button type="submit" class="form-submit">claim your free trial</button>
+                <p class="form-foot">By clicking the button, you are agrreing to our <a href="#" class="form-link">Terms and Services</a></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
