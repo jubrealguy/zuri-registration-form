@@ -19,14 +19,28 @@
         <div class="form-box">
             <p class="form-head"><span>Try it for 7 days</span> then $20/mo. thereafter</p>
             <form action="" class="form">
-                <input type="text" class="form-input" placeholder="First Name" maxlength = "15" minlength = "3" required>
-                <input type="text" class="form-input" placeholder="Last Name" maxlength = "15" minlength = "3" required>
-                <input type="email" class="form-input" placeholder="Email" required>
-                <input type="password" class="form-input" placeholder="Password" pattern="(?=.*d)(?=.*[a-z])(?=.*[A-Z]).(8,)" required>
-                <button type="submit" class="form-submit">claim your free trial</button>
+                <div class="form-group">
+                    <input type="text" class="form-input one" id="fname" placeholder="First Name" maxlength = "15" minlength = "3" required>
+                    <span id="error-fname"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input two" id="lname" placeholder="Last Name" maxlength = "15" minlength = "3" required>
+                    <span id="error-lname"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-input three" id="email" placeholder="Email" required>
+                <span id="error-email"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-input four" id="pass" placeholder="Password" required>
+                <span id="error-pass"></span>
+                </div>
+                <button type="submit" id="submit" class="form-submit">claim your free trial</button>
                 <p class="form-foot">By clicking the button, you are agrreing to our <a href="#" class="form-link">Terms and Services</a></p>
             </form>
         </div>
     </main>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

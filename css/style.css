@@ -24,7 +24,7 @@ body {
 
 .main {
     display: flex;
-    padding: 130px 12.5%;
+    padding: 100px 12.5%;
     align-items: center;
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .form-box {
-    width: 50%;
+    width: 48%;
 }
 
 @media (max-width: 450px) {
@@ -122,11 +122,12 @@ body {
 
 .form-head {
     background: hsl(248, 32%, 49%);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding: 15px;
     font-weight: 100;
     text-align: center;
     border-radius: 7px;
+    box-shadow: 0 8px 3px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 450px) {
@@ -151,11 +152,15 @@ body {
     background: white;
     padding: 40px;
     border-radius: 7px;
+    box-shadow: 0 8px 3px rgba(0, 0, 0, 0.25);
+}
+
+.form-group {
+    margin-bottom: 15px;
 }
 
 .form-input {
     display: inline-block;
-    margin-bottom: 20px;
     padding: 15px 20px;
     width: 100%;
     font-size: 16px;
@@ -163,8 +168,22 @@ body {
     border-radius: 4px;
 }
 
-.form-input:focus {
-    outline: 1.8px solid hsl(246, 25%, 77%);
+.form-group span {
+    font-style: italic;
+    color: red;
+    font-size: 11px;
+    display: block;
+    text-align: right;
+}
+
+.invalid {
+    border: none;
+    display: inline-block;
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: 1.8px solid red;
 }
 
 .form-submit {
@@ -174,10 +193,11 @@ body {
     font-size: 14px;
     border: none;
     text-transform: uppercase;
-    padding: 12px;
+    padding: 15px;
     width: 100%;
     border-radius: 7px;
     margin-bottom: 10px;
+    box-shadow: 0 8px 3px rgba(0, 0, 0, 0.25);
 }
 
 .form-foot {
